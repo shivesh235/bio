@@ -1,0 +1,235 @@
+/* Universal styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.4s;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: var(--text-color);
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--bg-color);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--line-color);
+}
+
+.logo h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.theme-toggle img {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+/* Hamburger menu styles */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger-menu .line {
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin: 4px 0;
+    background-color: var(--text-color);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-menu a {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.nav-menu a:hover {
+    background-color: var(--line-color);
+}
+
+@media screen and (max-width: 600px) {
+    .hamburger-menu {
+        display: block;
+    }
+    .nav-menu {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: var(--bg-color);
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .nav-menu.hide {
+        display: none;
+    }
+    .nav-menu a {
+        margin: 0.5rem 0;
+    }
+}
+
+main {
+    flex: 1;
+    padding: 5rem 2rem 2rem;
+    background-color: var(--main-bg-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 70px;
+}
+
+header h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+p {
+    color: var(--text-color);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+.content-section {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.content-section.active {
+    display: block;
+    opacity: 1;
+}
+
+.home-content {
+    text-align: center;
+}
+
+.home-content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.home-content p {
+    margin: 20px auto;
+    font-size: 1.2em;
+    max-width: 600px;
+}
+
+footer {
+    background-color: var(--footer-bg-color);
+    padding: 10px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
+    font-size: 0.8em;
+    text-align: center;
+}
+
+footer .line {
+    width: 90%;
+    height: 1px;
+    background-color: var(--line-color);
+    margin: 0 auto 10px;
+}
+
+.footer-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-list li a {
+    color: var(--text-color);
+}
+
+.footer-list li a img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-list {
+        flex-direction: column;
+    }
+    .footer-list li {
+        margin: 10px 0;
+    }
+}
+
+:root {
+    --bg-color: #fff;
+    --main-bg-color: #f9f9f9;
+    --text-color: #333;
+    --accent-color: #007BFF;
+    --line-color: #ddd;
+    --footer-bg-color: #f1f1f1;
+}
+
+body.dark {
+    --bg-color: #333;
+    --main-bg-color: #444;
+    --text-color: #f9f9f9;
+    --accent-color: #1e90ff;
+    --line-color: #555;
+    --footer-bg-color: #222;
+}
