@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anchor Link Example</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    section {
+      height: 100vh;
+      padding: 50px;
+    }
+    #projects {
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#other">Other</a></li>
+      <!-- Other links -->
+    </ul>
+  </nav>
+
+  <section id="projects">
+    <div class="projects">
+                <div class="project-container">
+                    <img src="icons/prj1.png" alt="Project 1">
+                    <div class="project-details">
+                        <h3 style="text-align:center; font-size:24px;">Music Maesters</h3>
+                        <p>Generate Music that matches your vibe. Detection of age, gender, mood(happy,sad, anger etc,), background color. Selection of music is hard because it happens sometimes when we can not decide what to listen.So, given such condition our model can server the need to generate unique music by capturing their face thus detecting facial expression, background details. It can give best music based on when user is busy in activites like cooking, cleaning, driving etc. Existing models are biased on your previous songs history and cannot give realtime and unique music. But, our model is generating realtime music and the whole process is automated. And also user is flexible to edit the text prompt any time.</p>
+                    </div>
+                </div>
+                <hr style="width: 70%; border: 1px solid #6042e6; margin: 1em 15%;">
+            </div>
+            <div class="projects">
+                <div class="project-container">
+                    <img src="icons/prj1.png" alt="Project 1">
+                    <div class="project-details">
+                        <h3 style="text-align:center; font-size:24px;">Music Maesters</h3>
+                        <p>Generate Music that matches your vibe. Detection of age, gender, mood (happy, sad, anger, etc.), background color. Selection of music is hard because it happens sometimes when we cannot decide what to listen to. Given such a condition, our model can serve the need to generate unique music by capturing their face, thus detecting facial expression and background details.</p>
+                    </div>
+                </div>
+                <hr style="width: 70%; border: 1px solid #6042e6; margin: 1em 15%;">
+            </div>
+            <div class="projects">
+                <div class="project-container">
+                    <img src="icons/prj1.png" alt="Project 1">
+                    <div class="project-details">
+                        <h3 style="text-align:center; font-size:24px;">Music Maesters</h3>
+                        <p>Generate Music that matches your vibe. Detection of age, gender, mood (happy, sad, anger, etc.), background color. Selection of music is hard because it happens sometimes when we cannot decide what to listen to. Given such a condition, our model can serve the need to generate unique music by capturing their face, thus detecting facial expression and background details.</p>
+                    </div>
+                </div>
+                <hr style="width: 70%; border: 1px solid #6042e6; margin: 1em 15%;">
+            </div>
+            <div class="projects">
+                <div class="project-container">
+                    <img src="icons/prj1.png" alt="Project 1">
+                    <div class="project-details">
+                        <h3 style="text-align:center; font-size:24px;">Music Maesters</h3>
+                        <p>Generate Music that matches your vibe. Detection of age, gender, mood (happy, sad, anger, etc.), background color. Selection of music is hard because it happens sometimes when we cannot decide what to listen to. Given such a condition, our model can serve the need to generate unique music by capturing their face, thus detecting facial expression and background details.</p>
+                    </div>
+                </div>
+                <hr style="width: 70%; border: 1px solid #6042e6; margin: 1em 15%;">
+            </div>
+  </section>
+
+  <!-- Other sections -->
+  <section id="other">
+    <h1>Other Content</h1>
+    <p>Other content goes here.</p>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        });
+      });
+    });
+  </script>
+  
+</body>
+</html>

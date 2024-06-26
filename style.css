@@ -187,6 +187,40 @@ a:hover {
     max-width: 600px;
 }
 
+/* General styles for the projects section */
+.project-container {
+    display: flex;
+    align-items: center;
+    margin: 0 15%;
+}
+
+.project-container img {
+    flex: 0 0 auto;
+    width: 25em;
+    margin-right: 20px;
+}
+
+.project-details {
+    flex: 1;
+}
+
+/* Media query for small devices */
+@media (max-width: 600px) {
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-container img {
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+
+    .project-details {
+        text-align: center;
+    }
+}
+
 footer {
     background-color: var(--footer-bg-color);
     padding: 10px;

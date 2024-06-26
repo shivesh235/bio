@@ -1,3 +1,53 @@
+document.addEventListener('DOMContentLoaded', () => {
+    showSection('home'); // Show the home section by default
+
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeLabel = document.getElementById('theme-label');
+    const themeIcon = document.getElementById('theme-icon');
+
+    const updateTheme = () => {
+        const isDark = themeToggle.checked;
+        document.body.classList.toggle('dark-theme', isDark);
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        themeLabel.textContent = isDark ? '' : '';
+        themeIcon.src = isDark ? 'icons/dark-mode.png' : 'icons/light-mode.png';
+    };
+
+    themeToggle.addEventListener('change', updateTheme);
+
+    // Load the saved theme from local storage
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        themeToggle.checked = true;
+    }
+    updateTheme();
+});
+
+function showSection(sectionId) {
+    // Hide all sections with a fade-out effect
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(section => {
+        section.classList.remove('active');
+    });
+
+    // Show the clicked section with a fade-in effect
+    const activeSection = document.getElementById(sectionId);
+    setTimeout(() => {
+        activeSection.classList.add('active');
+    }, 100); // Delay to allow opacity transition
+
+    // Close the menu if in mobile view
+    const navUl = document.querySelector('nav ul');
+    navUl.classList.remove('show');
+}
+
+function toggleMenu() {
+    const navUl = document.querySelector('nav ul');
+    navUl.classList.toggle('show');
+}
+
+
+
 const hamburger = document.querySelector('.hamburger-menu');
 const navMenu = document.querySelector('.nav-menu');
 const themeIcon = document.getElementById('theme-icon');
@@ -21,23 +71,15 @@ navLinks.forEach(link => {
     });
 });
 
-// Show section
-function showSection(sectionId) {
-    const sections = document.querySelectorAll('.content-section');
-    sections.forEach(section => {
-        section.classList.remove('active');
-        section.style.display = 'none';
+// Smooth scroll to section
+navLinks.forEach(link => {
+    link.addEventListener('click', event => {
+        event.preventDefault();
+        const sectionId = link.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(sectionId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
     });
-
-    const targetSection = document.getElementById(sectionId);
-    targetSection.style.display = 'block';
-    setTimeout(() => {
-        targetSection.classList.add('active');
-    }, 100); // Delay to allow transition effect
-}
-
-// Show initial section
-showSection('home');
+});
 
 // Theme switcher
 themeIcon.addEventListener('click', () => {

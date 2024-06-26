@@ -25,9 +25,9 @@
             </div>
             <div class="nav-menu hide">
                 <a href="#home" onclick="showSection('home')">Home</a>
-                <a href="#consulting" onclick="showSection('consulting')">Projects</a>
-                <a href="#books" onclick="showSection('books')">Skills</a>
-                <a href="#press" onclick="showSection('press')">Education</a>
+                <a href="#projects" onclick="showSection('projects')">Projects</a>
+                <a href="#skills" onclick="showSection('skills')">Skills</a>
+                <a href="#education" onclick="showSection('education')">Education</a>
                 <!-- <a href="#social-media" onclick="showSection('social-media')">Blog</a> -->
                 <a href="#contact" onclick="showSection('contact')">Contact</a>
                 <!-- <a href="#more" onclick="showSection('more')">More</a> -->
@@ -37,87 +37,82 @@
 
     <main>
         <!-- ######################## Bio ##########################################-->
-        <section id="home" class="content-section active">
+        <section id="home" class="content-section">
             <div class="home-content">
                 <img src="icons/profile-pic.png" alt="Shivesh Singh">
                 <p style="text-align:center; font-size:24px;">Hello!</p> 
                 <p>
                     <br> I am <b>Shivesh Singh</b>, a dedicated Machine Learning enthusiast with a strong foundation in Data Science and Computer Science. Currently pursuing Master's in Machine Learning, IIT Mandi. <br>
                     <br>Proficient in machine learning and deep learning algorithms. Experienced in using frameworks such as TensorFlow, PyTorch, and Scikit-learn to deploy effective models. Worked on several projects to try to deliver impactful solutions through innovative applications of machine learning techniques and effective problem-solving. </p> 
-
-                <p style="text-align:center; font-size:24px;"> <b>Welcome to my portfolio!</b> </p>
-            </div>
-            <div class="home-content">
-                <p></p>
+            
+                <p style="text-align:center; font-size:24px;"> <br> <b>Welcome to my portfolio!</b> </p>
             </div>
         </section>
 
         <!-- ######################## Projects ##########################################-->
-        <section id="consulting" class="content-section">
-            <h2 style="text-align:center; font-size:28px">Projects</h2>
+        <section id="projects" class="content-section">
+            <h1 style="text-align:center; color:#6042e6; margin: 1em 1em 4em 1em;">Projects</h1>
             <div class="projects">
                 <div class="project-container">
-                    <div class="project left">
-                        <img src="path/to/project1.jpg" alt="Project 1">
-                        <div class="project-details">
-                            <h3>Project 1</h3>
-                            <p>Description of Project 1. This project involves developing a scalable web application for e-commerce.</p>
-                        </div>
+                    <img src="icons/prj1.png" alt="Project 1">
+                    <div class="project-details">
+                        <h2 style="text-align:center; font-size:24px;">Music Maesters</h2>
+                        <p>Generate Music that matches your vibe. Detection of age, gender, mood (happy, sad, anger, etc.), background color. Selection of music is hard because it happens sometimes when we cannot decide what to listen to. Given such a condition, our model can serve the need to generate unique music by capturing their face, thus detecting facial expression and background details.</p>
                     </div>
-                    <hr>
                 </div>
-                <div class="project-container">
-                    <div class="project right">
-                        <img src="path/to/project2.jpg" alt="Project 2">
-                        <div class="project-details">
-                            <h3>Project 2</h3>
-                            <p>Description of Project 2. This project focuses on creating an AI-based chatbot for customer support.</p>
-                        </div>
-                    </div>
-                    <hr>
-                </div>
-                <div class="project-container">
-                    <div class="project left">
-                        <img src="path/to/project3.jpg" alt="Project 3">
-                        <div class="project-details">
-                            <h3>Project 3</h3>
-                            <p>Description of Project 3. This project entails building a mobile app for fitness tracking.</p>
-                        </div>
-                    </div>
-                    <hr>
-                </div>
+                <hr style="width: 70%; border: 1px solid #08d7c3; margin: 1em 15%;">
             </div>
+            <!-- <div class="projects">
+                <div class="project-container">
+                    <img src="icons/prj1.png" alt="Project 1">
+                    <div class="project-details">
+                        <h2 style="text-align:center; font-size:24px;">Music Maesters</h2>
+                        <p>Generate Music that matches your vibe. Detection of age, gender, mood (happy, sad, anger, etc.), background color. Selection of music is hard because it happens sometimes when we cannot decide what to listen to. Given such a condition, our model can serve the need to generate unique music by capturing their face, thus detecting facial expression and background details.</p>
+                    </div>
+                </div>
+                <hr style="width: 70%; border: 1px solid #6042e6; margin: 1em 15%;">
+            </div>
+            <div class="projects">
+                <div class="project-container">
+                    <img src="icons/prj1.png" alt="Project 1">
+                    <div class="project-details">
+                        <h2 style="text-align:center; font-size:24px;">Music Maesters</h2>
+                        <p>Generate Music that matches your vibe. Detection of age, gender, mood (happy, sad, anger, etc.), background color. Selection of music is hard because it happens sometimes when we cannot decide what to listen to. Given such a condition, our model can serve the need to generate unique music by capturing their face, thus detecting facial expression and background details.</p>
+                    </div>
+                </div>
+                <hr style="width: 70%; border: 1px solid #6042e6; margin: 1em 15%;">
+            </div> -->
         </section>
 
         <!-- ######################## Skills ##########################################-->
-        <section id="books" class="content-section">
-            <h2 style="text-align:center; font-size:28px">Skills</h2>
-            <!-- Add book content here -->
+        <section id="skills" class="content-section">
+            <h2 style="text-align:center; margin: 1em 1em 4em 1em;">Skills</h2>
+            <!-- Add skills content here -->
         </section>
 
         <!-- ######################## Education ##########################################-->
-        <section id="press" class="content-section">
-            <h2 style="text-align:center; font-size:28px">Education</h2>
-            <!-- Add press content here -->
+        <section id="education" class="content-section">
+            <h2 style="text-align:center; margin: 1em 1em 4em 1em;">Education</h2>
+            <!-- Add education content here -->
         </section>
 
         <!-- ######################## Blog ##########################################-->
-        <section id="social-media" class="content-section">
-            <h2 style="text-align:center; font-size:28px">Blog</h2>
-            <!-- Add social media content here -->
+        <section id="blogs" class="content-section">
+            <h2 style="text-align:center; margin: 1em 1em 4em 1em;">Blogs</h2>
+            <!-- Add blog content here -->
         </section>
 
         <!-- ######################## Contact ##########################################-->
         <section id="contact" class="content-section">
-            <h2 style="text-align:center; font-size:28px">Contact</h2>
+            <h2 style="text-align:center; margin: 1em 1em 4em 1em;">Contact</h2>
             <!-- Add contact content here -->
         </section>
 
         <!-- ######################## More ##########################################-->
-        <section id="more" class="content-section">
+        <!-- <section id="more" class="content-section">
             <h2 style="text-align:center; font-size:28px">More</h2>
             <iframe src="https://nbviewer.jupyter.org/url/gansynth_external.ipynb" width="100%" height="600"></iframe>
-        </section>
+        </section> -->
     </main>
 
 <!-- ######################## Footer ##########################################-->
@@ -130,6 +125,7 @@
             <li><a href="tel:7292098513"><img src="icons/phone.png" alt="Phone"><span>7292098513</span></a></li>
         </ul>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
