@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1f2937;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #4b5563;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #1f2937;
+        }
+
+        /* Hero Section */
+        .hero {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            color: #4b5563;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .social-links a {
+            color: #4b5563;
+            font-size: 1.5rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #1f2937;
+            transform: translateY(-2px);
+        }
+
+        /* Projects Section */
+        .projects {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-description {
+            color: #6b7280;
+            margin-bottom: 1rem;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tech-tag {
+            background: #f3f4f6;
+            color: #4b5563;
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.875rem;
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero h2 {
+                font-size: 1.25rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">Shivesh Singh</a>
+            <div class="nav-links">
+                <a href="#about-offset">About</a>
+                <a href="#projects-offset">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="projects-offset" style="height: 80px; margin-top: -80px;"></div>
+    <section id="about" class="hero">
+        <img src="profile-1.png" alt="Profile Picture" style="width: 150px; height: 150px; border-radius: 50%;">
+        <h1>Shivesh Singh</h1>
+        <h2>Data Scientist / ML Engineer</h2>
+        <p>
+            Passionate about transforming data into meaningful insights and building ML solutions.
+            Specializing in creating end-to-end machine learning solutions and data visualizations.
+        </p>
+        <!-- <div class="tech-stack" style="width: fit-content; margin: 0 auto;">
+            <span class="tech-tag"></span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">Prophet</span>
+            <span class="tech-tag">TensorFlow</span>
+        </div>
+        <p></p> -->
+        <div class="social-links">
+            <a href="https://github.com/yourusername" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:your.email@example.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </section>
+
+    <div id="projects-offset" style="height: 80px; margin-top: -80px;"></div>
+    <section id="projects" class="projects">
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="/api/placeholder/600/400" alt="Time Series Analysis" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Time Series Analysis</h3>
+                    <p class="project-description">
+                        Analyzed stock market data using Prophet and LSTM models to predict future trends.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Prophet</span>
+                        <span class="tech-tag">TensorFlow</span>
+                    </div>
+                    <a href="https://github.com/yourusername/project1" class="project-link" target="_blank">
+                        View Project <i class="fas fa-external-link-alt" style="margin-left: 0.5rem;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="/api/placeholder/600/400" alt="Customer Segmentation" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Customer Segmentation</h3>
+                    <p class="project-description">
+                        Implemented K-means clustering to identify customer segments for targeted marketing.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Seaborn</span>
+                    </div>
+                    <a href="https://github.com/yourusername/project2" class="project-link" target="_blank">
+                        View Project <i class="fas fa-external-link-alt" style="margin-left: 0.5rem;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>
