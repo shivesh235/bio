@@ -16,14 +16,14 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
-            background-color: #f3f4f6;
-            color: #1f2937;
+            background-color: #1a202c; /* Dark background */
+            color: #e2e8f0; /* Light text */
         }
 
         /* Navigation */
         nav {
-            background: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background: #2d3748; /* Slightly lighter than body */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
             padding: 1rem 2rem;
             position: sticky;
             top: 0;
@@ -41,7 +41,7 @@
         .logo {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #1f2937;
+            color: #e2e8f0;
             text-decoration: none;
         }
 
@@ -52,13 +52,13 @@
 
         .nav-links a {
             text-decoration: none;
-            color: #4b5563;
+            color: #a0aec0; /* Softer text color */
             font-weight: 500;
             transition: color 0.3s ease;
         }
 
         .nav-links a:hover {
-            color: #1f2937;
+            color: #e2e8f0;
         }
 
         /* Hero Section */
@@ -66,26 +66,26 @@
             max-width: 1200px;
             margin: 4rem auto;
             padding: 2rem;
-            background: white;
+            background: #2d3748; /* Matches nav background */
             border-radius: 1rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
             text-align: center;
         }
 
         .hero h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
-            color: #1f2937;
+            color: #e2e8f0;
         }
 
         .hero h2 {
             font-size: 1.5rem;
-            color: #4b5563;
+            color: #a0aec0;
             margin-bottom: 1.5rem;
         }
 
         .hero p {
-            color: #6b7280;
+            color: #cbd5e0;
             max-width: 600px;
             margin: 0 auto 2rem;
         }
@@ -97,13 +97,13 @@
         }
 
         .social-links a {
-            color: #4b5563;
+            color: #a0aec0;
             font-size: 1.5rem;
             transition: color 0.3s ease, transform 0.3s ease;
         }
 
         .social-links a:hover {
-            color: #1f2937;
+            color: #e2e8f0;
             transform: translateY(-2px);
         }
 
@@ -116,15 +116,17 @@
 
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(2, 1fr); /* Changed from auto-fit to fixed 2 columns */
             gap: 2rem;
+            max-width: 1000px; /* Optional: potentially limit width for better centering */
+            margin: 0 auto; /* Optional: center the grid if you want */
         }
 
         .project-card {
-            background: white;
+            background: #2d3748;
             border-radius: 1rem;
             overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
             transition: transform 0.3s ease;
         }
 
@@ -136,6 +138,7 @@
             width: 100%;
             height: 200px;
             object-fit: cover;
+            filter: brightness(0.8); /* Slightly darken images */
         }
 
         .project-content {
@@ -145,11 +148,12 @@
         .project-title {
             font-size: 1.25rem;
             font-weight: bold;
+            color: #e2e8f0;
             margin-bottom: 0.5rem;
         }
 
         .project-description {
-            color: #6b7280;
+            color: #a0aec0;
             margin-bottom: 1rem;
         }
 
@@ -161,8 +165,8 @@
         }
 
         .tech-tag {
-            background: #f3f4f6;
-            color: #4b5563;
+            background: #4a5568; /* Darker tag background */
+            color: #cbd5e0;
             padding: 0.25rem 0.75rem;
             border-radius: 1rem;
             font-size: 0.875rem;
@@ -171,13 +175,14 @@
         .project-link {
             display: inline-flex;
             align-items: center;
-            color: #2563eb;
+            color: #63b3ed; /* Softer link color */
             text-decoration: none;
             font-weight: 500;
         }
 
         .project-link:hover {
             text-decoration: underline;
+            color: #4299e1;
         }
 
         /* Mobile Responsive */
@@ -206,43 +211,39 @@
             <a href="#" class="logo">Shivesh Singh</a>
             <div class="nav-links">
                 <a href="#about-offset">About</a>
-                <a href="#projects-offset">Projects</a>
+                <a href="#projects">Projects</a>
             </div>
         </div>
     </nav>
 
-    <div id="projects-offset" style="height: 80px; margin-top: -80px;"></div>
+    <div id="about-offset" style="height: 80px; margin-top: 4px;"></div>
     <section id="about" class="hero">
-        <img src="profile.png" alt="Profile Picture" style="width: 150px; height: 150px; border-radius: 50%;">
+        <img src="profile.png" alt="Profile Picture" style="width: 150px; height: 150px; border-radius: 50%; border: 3px solid #4a5568;">
         <h1>Shivesh Singh</h1>
         <h2>Data Scientist / ML Engineer</h2>
         <p>
             Passionate about transforming data into meaningful insights and building ML solutions.
             Specializing in creating end-to-end machine learning solutions and data visualizations.
         </p>
-        <!-- <div class="tech-stack" style="width: fit-content; margin: 0 auto;">
-            <span class="tech-tag"></span>
-            <span class="tech-tag">Pandas</span>
-            <span class="tech-tag">Prophet</span>
-            <span class="tech-tag">TensorFlow</span>
-        </div>
-        <p></p> -->
         <div class="social-links">
-            <a href="https://github.com/yourusername" target="_blank">
+            <a href="https://github.com/shivesh235" target="_blank">
                 <i class="fab fa-github"></i>
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank">
+            <a href="https://www.linkedin.com/in/shivesh235" target="_blank">
                 <i class="fab fa-linkedin"></i>
             </a>
-            <a href="mailto:your.email@example.com">
+            <a href="mailto:shivesh235@gmail.com">
                 <i class="fas fa-envelope"></i>
             </a>
         </div>
     </section>
+    
 
-    <div id="projects-offset" style="height: 80px; margin-top: -80px;"></div>
+    <div id="projects-offset" style="height: 80px; margin-top: -2px;"></div>
     <section id="projects" class="projects">
+        <h2 style="color: #e2e8f0; text-align: center; margin-bottom: 2rem; font-size: 2rem;">Projects</h2>
         <div class="projects-grid">
+        
             <div class="project-card">
                 <img src="/api/placeholder/600/400" alt="Time Series Analysis" class="project-image">
                 <div class="project-content">
@@ -274,14 +275,49 @@
                         <span class="tech-tag">Scikit-learn</span>
                         <span class="tech-tag">Seaborn</span>
                     </div>
-                    <a href="https://github.com/yourusername/project2" class="project-link" target="_blank">
+                    <a href="https://shivesh235.github.io/jbbook/Databases.html#" class="project-link" target="_blank">
+                        View Project <i class="fas fa-external-link-alt" style="margin-left: 0.5rem;"></i>
+                    </a>
+                </div>
+            </div>
+            
+                <div class="project-card">
+                <img src="/api/placeholder/600/400" alt="Time Series Analysis" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Time Series Analysis</h3>
+                    <p class="project-description">
+                        Analyzed stock market data using Prophet and LSTM models to predict future trends.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Prophet</span>
+                        <span class="tech-tag">TensorFlow</span>
+                    </div>
+                    <a href="https://github.com/yourusername/project1" class="project-link" target="_blank">
+                        View Project <i class="fas fa-external-link-alt" style="margin-left: 0.5rem;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="/api/placeholder/600/400" alt="Customer Segmentation" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Customer Segmentation</h3>
+                    <p class="project-description">
+                        Implemented K-means clustering to identify customer segments for targeted marketing.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Seaborn</span>
+                    </div>
+                    <a href="https://shivesh235.github.io/jbbook/Databases.html#" class="project-link" target="_blank">
                         View Project <i class="fas fa-external-link-alt" style="margin-left: 0.5rem;"></i>
                     </a>
                 </div>
             </div>
         </div>
     </section>
-
-
 </body>
 </html>
