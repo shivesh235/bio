@@ -236,8 +236,7 @@
         <h1>Shivesh Singh</h1>
         <h2>Data Scientist / ML Engineer</h2>
         <p>
-            Passionate about transforming data into meaningful insights and building ML solutions.
-            Specializing in creating end-to-end machine learning solutions and data visualizations.
+            As a passionate Machine Learning Engineer and Researcher, I specialize in developing innovative AI-driven solutions that bridge the gap between research and real-world applications. With a strong academic foundation from IIT Mandi, where I am pursuing an M.Tech by Research in Machine Learning, I have cultivated expertise in deep learning, generative AI, and spatiotemporal modeling.
         </p>
         <div class="social-links">
             <a href="https://github.com/shivesh235" target="_blank">
@@ -251,33 +250,36 @@
             </a>
         </div>
 
-        <div class="row">
-            <div class="column" style="margin-bottom: 30px;">
+        <div class="row" style="display: flex; justify-content: center; gap: 50px; margin: 0 auto; width: 100%;">
+            <!-- First Block -->
+            <div class="column" style="width: 500px; max-height: 700px; overflow-y: auto; text-align: center;">
                 <h3 style="font-size: 20px; font-weight: 600; margin-bottom: 15px; border-bottom: 2px solid #4a5568; padding-bottom: 5px;">Interests</h3>
-                <ul style="list-style-type: none; padding-left: 2px;">
-                    <li style="margin-bottom: 8px;">Machine Learning & Deep Learning</li>
-                    <li style="margin-bottom: 8px;">Data Visualization</li>
-                    <li style="margin-bottom: 8px;">AI Ethics and Responsible AI</li>
-                    <li style="margin-bottom: 8px;">Computer Vision</li>
-                    <li style="margin-bottom: 8px;">Natural Language Processing</li>
-                    <li style="margin-bottom: 8px;">Cloud Computing and MLOps</li>
+                <ul style="list-style-type: none; padding-left: 0; text-align: center;">
+                    <li style="margin-bottom: 8px; text-align: center;">Machine Learning</li>
+                    <li style="margin-bottom: 8px; text-align: center;">Deep Learning</li>
+                    <li style="margin-bottom: 8px; text-align: center;">Generative AI</li>
+                    <li style="margin-bottom: 8px; text-align: center;">Computer Vision</li>
+                    <li style="margin-bottom: 8px; text-align: center;">Natural Language Processing/LLM's</li>
+                    <li style="margin-bottom: 8px; text-align: center;">Data Visualization</li>
                 </ul>
             </div>
-
-            <div class="column">
-                <h3 style="font-size: 20px; font-weight: 600; margin-bottom: 15px; border-bottom: 2px solid #4a5568; padding-bottom: 5px;">Interests</h3>
+        
+            <!-- Second Block -->
+            <div class="column" style="width: 500px; text-align: center;">
+                <h3 style="font-size: 20px; font-weight: 600; margin-bottom: 15px; border-bottom: 2px solid #4a5568; padding-bottom: 5px;">Education</h3>
                 <div>
-                    <h4 style="font-weight: 500; font-size: 16px;">Master of Science in Data Science</h4>
-                    <p style="color: #666;">University Name, Location</p>
-                    <p style="font-size: 14px; color: #888;">Graduation Year</p>
+                    <h4 style="font-weight: 500; font-size: 16px;">M.Tech(R)/M.S in Machine Learning</h4>
+                    <p style="color: #cdcdcd; margin-bottom: 12px;">Indian Institute of Technology, Mandi</p>
+                    <p style="font-size: 14px; color: #cdcdcd;">2025</p>
                 </div>
-                <div class="column">
+                <div>
                     <h4 style="font-weight: 500; font-size: 16px;">Bachelor of Technology in Computer Science</h4>
-                    <p style="color: #666;">University Name, Location</p>
-                    <p style="font-size: 14px; color: #888;">Graduation Year</p>
+                    <p style="color: #cdcdcd; margin-bottom: 12px;">Rajkiya Engineering College, Kannauj</p>
+                    <p style="font-size: 14px; color: #cdcdcd;">2023</p>
                 </div>
             </div>
         </div>
+        
 
     </section>
     
@@ -351,6 +353,57 @@
         <h2 style="color: #e2e8f0; text-align: center; margin-bottom: 2rem; font-size: 2rem;">ML_Insights</h2>
         <div class="projects-grid">
         
+
+            <div class="project-card">
+                <img src="./img/gans.png" alt="Exploring Generative Models: VAE and GAN Variants" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Exploring Generative Models: VAE and GAN Variants</h3>
+                    <p class="project-description">
+                        This notebook is a comprehensive exploration of generative models, focusing on Variational Autoencoders (VAE) and Generative Adversarial Networks (GANs). Key experiments include implementing VAE on MNIST and CelebA datasets, performing latent space arithmetic to modify facial attributes, and comparing GAN variants like standard GAN, WGAN, WGAN-GP, and SNGAN using MNIST and CIFAR-10 datasets.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">VAE</span>
+                        <span class="tech-tag">GAN's</span>
+                        <span class="tech-tag">WGAN</span>
+                        <span class="tech-tag">SNGAN</span>
+                    </div>
+                    <a href="https://shivesh235.github.io/jbbook/genai/Generation_using_VAE%27s_and_GAN%27s.html" class="project-link" target="_blank">
+                        View Project <i class="fas fa-external-link-alt" style="margin-left: 0.5rem;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ##### -->
+
+            <div class="project-card">
+                <img src="./img/ocr.png" alt="OCR Web Application" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">OCR Web Application</h3>
+                    <p class="project-description">
+                        This is a FastAPI-based OCR (Optical Character Recognition) web application that allows users to extract text from uploaded images.
+                        <ul>
+                        <li> Upload an Image: Navigate to the homepage, upload an image using the provided form, and submit.</li>
+
+                        <li> Process: The app processes the image using the pytesseract library and extracts any text detected in the image.</li> 
+
+                        <li> Display Results: After processing, the extracted text and the uploaded image are displayed on the page.</li> 
+
+                        <li> Handle Errors: If no text is found or an invalid file is uploaded, the app will notify the user.</li> 
+                        </ul>
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">OCR</span>
+                        <span class="tech-tag">Tesseract</span>
+                        <span class="tech-tag">FastAPI</span>
+                    </div>
+                    <a href="https://github.com/shivesh235/fastapi-ocr" class="project-link" target="_blank">
+                        View Project <i class="fas fa-external-link-alt" style="margin-left: 0.5rem;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- #### -->
+
             <div class="project-card">
                 <img src="./img/dashboard.png" alt="Motor Vehicle Collisions Dashboard" class="project-image">
                 <div class="project-content">
@@ -364,7 +417,23 @@
                         <span class="tech-tag">Streamlit</span>
                         <span class="tech-tag">FAISS</span>
                     </div>
-                    <a href="https://github.com/shivesh235/articals_bot" class="project-link" target="_blank">
+                    <a href="https://github.com/shivesh235/web_app_vehicle_collision" class="project-link" target="_blank">
+                        View Project <i class="fas fa-external-link-alt" style="margin-left: 0.5rem;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- #### -->
+
+            <div class="project-card">
+                <img src="./img/databases.png" alt="Databases + SQL" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Databases + SQL</h3>
+                    <p class="project-description">
+                        This notebook provides an overview of fundamental database concepts and SQL operations. It covers key topics like database design, normalization, primary and foreign keys, and basic SQL commands such as SELECT, INSERT, UPDATE, DELETE, and JOIN operations. Perfect for beginners looking to build a strong foundation in relational databases and query writing.
+                    </p>
+                    
+                    <a href="https://shivesh235.github.io/jbbook/Databases.html" class="project-link" target="_blank">
                         View Project <i class="fas fa-external-link-alt" style="margin-left: 0.5rem;"></i>
                     </a>
                 </div>
