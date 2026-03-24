@@ -1,34 +1,25 @@
 
-Welcome to my personal online webpage, created using Jupyter Book! This repository serves as a comprehensive showcase of my interests, projects, and professional journey. 
+# Shivesh Singh — Portfolio
 
-## About Me
+Personal portfolio site hosted at [shivesh235.github.io/bio](https://shivesh235.github.io/bio/).
 
-As a passionate Machine Learning Engineer and Researcher, I specialize in developing innovative AI-driven solutions that bridge the gap between research and real-world applications. With a strong academic foundation from IIT Mandi, where I am pursuing an M.Tech by Research in Machine Learning, I have cultivated expertise in deep learning, generative AI, and spatiotemporal modeling.
+## About
 
+Generative AI Engineer specializing in production-grade multi-agent orchestration for enterprise AI-first transformation. Senior Data Engineer (GenAI) at LTIMindtree. M.Tech (Research) in Machine Learning from IIT Mandi.
 
-## Interests
+## Highlights
 
-My primary interests lie in:
+- Architect of **DeepAgents** — custom multi-agent orchestration framework (80+ sub-agents) powering Thrieve.ai in production
+- Published researcher in Spatial Information Research (Springer)
+- 4th Place globally — DCASE Challenge 2024
+- Winner — AI Innovation Hackathon, Yamaha Motor Solutions
 
-- Machine Learning
-- Data Science
-- Artificial Intelligence
-- Statistical Analysis
-- Data Visualization
+## Tech Stack
 
-I am always excited to explore new technologies and methodologies in these fields.
-
-<!-- ## Blog
-
-I occasionally write about my experiences, learnings, and thoughts on various topics related to machine learning and data science. Check out my blog [here](link_to_blog). -->
+LangGraph, Azure OpenAI, LangChain, MCP, pgvector, Kafka, Airflow, Databricks, PostgreSQL, AWS, Docker, Prometheus, Grafana
 
 ## Contact
 
-Feel free to reach out to me via the following platforms:
-
 - [LinkedIn](https://www.linkedin.com/in/shivesh235)
-- [Email](mailto:shivesh235@example.com)
-
-## How to View This Book
-
-You can view this site online [here](https://shivesh235.github.io/bio/).
+- [Email](mailto:shivesh235@gmail.com)
+- [GitHub](https://github.com/shivesh235)
